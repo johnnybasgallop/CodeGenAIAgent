@@ -1,61 +1,88 @@
-# CodeGenAIAgent
+# Quantum Doc - AI-Powered DocString Generator
 
-This project provides a simple AI-powered coding assistant/agent that can help you analyze existing code, generate new code and implement it in new files, and answer your questions about code. It's designed to make coding easier and more efficient.
+Quantum Doc is a powerful Visual Studio Code extension that leverages AI to generate production-quality docstrings in the Google style directly within your Python files. Say goodbye to manually writing docstrings and let Quantum Doc handle the documentation for you!
 
-## Features
+## 🚀 Features
+- **AI-Powered DocStrings**: Generates high-quality Google-style docstrings for your Python functions, classes, and modules.
+- **Seamless Integration**: Works directly within VS Code without disrupting your workflow.
+- **Easy to Use**: Just press `Cmd + Shift + P`, type `Generate Docstrings`, and let Quantum Doc do the rest!
+- **Powered by Gemini 1.5 Flash**: Utilizes the latest AI model for accurate and efficient documentation.
 
-* **Code analysis:**
-    * Finds bugs and suggests improvements.
-    * Explains how code works.
-* **Code generation:**
-    * Creates code snippets in multiple languages (Python (reccomended), JavaScript, C++, Java).
-    * Generates code based on your descriptions and input files (via filenames).
-* **Question answering:**
-    * Answers your questions about code and programming concepts.
+## 🛠 Installation
+1. Open Visual Studio Code.
+2. Go to the Extensions Marketplace (`Cmd + Shift + X` on Mac or `Ctrl + Shift + X` on Windows/Linux).
+3. Search for `Quantum Doc` and click **Install**.
 
-## Getting Started
+## 🎯 Usage
+1. Open a Python file in VS Code.
+2. Press `Cmd + Shift + P` (Mac) or `Ctrl + Shift + P` (Windows/Linux).
+3. Type `Generate Docstrings` and select the option.
+4. Watch as Quantum Doc intelligently adds well-structured docstrings to your functions and classes!
 
-1. **Install:**
-    * Make sure you have Python 3.8 or higher but also <=Python3.12
-    * Clone this repository and install the required packages:
-    ```bash
-    git clone [https://github.com/johnnybasgallop/UnitTestAIAgent.git](https://github.com/johnnybasgallop/UnitTestAIAgent.git)
-    pip install -r requirements.txt
-    ```
+## 🌟 Example
+### Before:
+```python
+from flask import Flask, jsonify, request
 
-2. **Set up Ollama:**
-    * Install Ollama and download the `mistral` and `codellama` models, instructions can be found here: [https://github.com/ollama/ollama]
-    * Download the models by running:
-    ```bash
-    ollama run mistral
-    ollama run codellama
-    ```
+app = Flask(__name__)
+items = []
 
-3. **Run:**
-    * Put your code files you want as inpu or conetext in the `data` folder.
-    * Run the agent: `python3 main.py`
-    * Type your coding-related questions or requests.
-    * Output files can be found in the dedicated output folder
+@app.route("/items", methods=["POST"])
+def create_item():
+    data = request.get_json()
+    items.append(data)
+    return jsonify(data), 201
+```
 
-## Examples
+### After:
+```python
+from flask import Flask, jsonify, request
 
-* "based off the API found in `test.py`, write me a new python script that calls the delete endpoint and passes in an item id to delete."
-* "What are the main differences between Python and JavaScript?"
-* "Find any potential issues in my `test.py` file."
+app = Flask(__name__)
+items = []
 
-## How it Works
+@app.route("/items", methods=["POST"])
+def create_item():
+    """Creates a new item.
 
-This project uses:
+    Returns:
+        tuple: JSON representation of the created item and HTTP status 201.
+    """
+    data = request.get_json()
+    items.append(data)
+    return jsonify(data), 201
+```
 
-* **LlamaIndex:** A powerful library for working with large language models (LLMs), It provides many tools used in this project.
-* **Ollama:** To run large language models locally on your computer.
-* **LlamaParse:** A tool for parsing documents, particularly unstructured data like PDFs.
-* **Pydantic** A library for data validation and parsing using Python type hints. BaseModel is used to define the structure of the output.
 
-## Contributing
+## 🎥 Example Video
+_A demo video showcasing Quantum Doc in action_
 
-Feel free to contribute to this project! You can report issues, suggest features, or submit code improvements.
+[Placeholder for .mov video file]
 
-## License
+## 🔑 Setting Up Your Gemini API Key
+Since Quantum Doc relies on the **Gemini 1.5 Flash** model, users need to provide their own API key to enable AI-powered docstring generation.
 
-MIT License
+### Steps to Get Your Gemini API Key:
+1. Go to the [Google AI Developer Console](https://ai.google.com/) and sign in.
+2. Navigate to the **API Keys** section.
+3. Generate a new API key.
+4. Copy the API key and add it to the extension settings in VS Code:
+   - Open VS Code settings (`Cmd + Shift + P` and type `Open User Settings`).
+   - Search for `Quantum Doc API Key`.
+   - Paste your API key in the field.
+
+## 📌 Notes
+- Ensure that your API key has sufficient quota for AI requests.
+- The extension only supports Python at the moment.
+- Your API key is stored locally and never shared.
+
+## 🤝 Contributing
+We welcome contributions! If you find a bug or want to improve the extension, feel free to submit a pull request or open an issue on GitHub.
+
+## 📜 License
+Quantum Doc is proprietary software. The license restricts copying, sharing, and unauthorized use outside of the extension.
+
+## 📩 Support
+For support or feedback, reach out via [GitHub Issues](https://github.com/your-repo/quantum-doc/issues).
+
+Happy Coding! 🚀
