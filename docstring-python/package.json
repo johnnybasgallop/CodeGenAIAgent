@@ -7,7 +7,8 @@
 	"icon": "QuantumDoc.png",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/johnnybasgallop/CodeGenAIAgent/tree/extension",
+		"url": "https://github.com/johnnybasgallop/CodeGenAIAgent/tree/extension"
+	},
 	"engines": {
 		"vscode": "^1.84.0"
 	},
