@@ -55,7 +55,7 @@ def create_item():
 
 
 ## 🎥 Example Video
-![]https://github.com/johnnybasgallop/CodeGenAIAgent/blob/extension/docstring-python/QuantumDoc.gif
+![](https://github.com/johnnybasgallop/CodeGenAIAgent/blob/extension/docstring-python/QuantumDoc.gif)
 
 [Placeholder for .mov video file]
 
