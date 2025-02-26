@@ -55,7 +55,7 @@ def create_item():
 
 
 ## 🎥 Example Video
-![Auto Generate Docstrings](images/demo.gif)
+![Auto Generate Docstrings](https://raw.githubusercontent.com/johnnybasgallop/CodeGenAIAgent/refs/heads/extension/docstring-python/images/demo.gif)
 
 
 ## 🔑 Setting Up Your Gemini API Key
