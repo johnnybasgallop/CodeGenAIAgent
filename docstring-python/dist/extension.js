@@ -52,7 +52,7 @@ function activate(context) {
     const fileContent = document.getText();
     const fileName = path.basename(document.fileName);
     const pythonScriptPath = path.join(context.extensionPath, "python", "main.py");
-    const config = vscode.workspace.getConfiguration("docstring-python");
+    const config = vscode.workspace.getConfiguration("QuantumDoc");
     const apiKey = config.get("geminiApiKey");
     if (!apiKey) {
       vscode.window.showErrorMessage("Please set your Gemini API key in the extension settings.");

@@ -23,7 +23,7 @@ export function activate(context: vscode.ExtensionContext) {
         const pythonScriptPath = path.join(context.extensionPath, 'python', 'main.py');
 
         // --- Get the API key from settings ---
-        const config = vscode.workspace.getConfiguration('docstring-python');
+        const config = vscode.workspace.getConfiguration('QuantumDoc');
         const apiKey = config.get<string>('geminiApiKey');
 
         if (!apiKey) {

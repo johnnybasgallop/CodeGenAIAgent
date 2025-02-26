@@ -1,9 +1,10 @@
-
 {
 	"name": "docstring-python",
-	"displayName": "Docstring Generator",
+	"displayName": "QuantumDoc",
 	"description": "Generates docstrings for Python code using an AI agent.",
-	"version": "0.0.1",
+	"version": "1.1.2",
+	"publisher": "BluefinAutomation",
+	"icon": "QuantumDoc.png",
 	"engines": {
 		"vscode": "^1.84.0"
 	},
@@ -21,34 +22,37 @@
 				"title": "Generate Docstrings"
 			}
 		],
-        "configuration": {
-            "title": "Docstring Generator Settings",
-            "properties": {
-                "docstring-python.geminiApiKey": {
-                    "type": "string",
-                    "default": "",
-                    "description": "Your Google Gemini API key."
-                }
-            }
-        }
+		"configuration": {
+			"title": "QuantumDoc Settings",
+			"properties": {
+				"QuantumDoc.geminiApiKey": {
+					"type": "string",
+					"default": "",
+					"description": "Your Google Gemini API key."
+				}
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run package",
 		"compile": "esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
 		"watch": "esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --watch",
-        "package": "esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --minify",
+		"package": "esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --minify",
 		"lint": "eslint src --ext ts",
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.84.0",
 		"@types/mocha": "^10.0.6",
 		"@types/node": "16.x",
+		"@types/vscode": "^1.84.0",
 		"@typescript-eslint/eslint-plugin": "^6.15.0",
 		"@typescript-eslint/parser": "^6.15.0",
-		"eslint": "^8.56.0",
-		"typescript": "^5.3.3",
 		"@vscode/test-electron": "^2.3.8",
-		"esbuild": "^0.19.0"
+		"esbuild": "^0.19.0",
+		"eslint": "^8.56.0",
+		"typescript": "^5.3.3"
+	},
+	"dependencies": {
+		"@vscode/vsce": "^3.2.2"
 	}
 }

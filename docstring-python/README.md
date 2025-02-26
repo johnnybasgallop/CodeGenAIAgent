@@ -1,71 +1,88 @@
-# docstring-python README
+# Quantum Doc - AI-Powered DocString Generator
 
-This is the README for your extension "docstring-python". After writing up a brief description, we recommend including the following sections.
+Quantum Doc is a powerful Visual Studio Code extension that leverages AI to generate production-quality docstrings in the Google style directly within your Python files. Say goodbye to manually writing docstrings and let Quantum Doc handle the documentation for you!
 
-## Features
+## 🚀 Features
+- **AI-Powered DocStrings**: Generates high-quality Google-style docstrings for your Python functions, classes, and modules.
+- **Seamless Integration**: Works directly within VS Code without disrupting your workflow.
+- **Easy to Use**: Just press `Cmd + Shift + P`, type `Generate Docstrings`, and let Quantum Doc do the rest!
+- **Powered by Gemini 1.5 Flash**: Utilizes the latest AI model for accurate and efficient documentation.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## 🛠 Installation
+1. Open Visual Studio Code.
+2. Go to the Extensions Marketplace (`Cmd + Shift + X` on Mac or `Ctrl + Shift + X` on Windows/Linux).
+3. Search for `Quantum Doc` and click **Install**.
 
-For example if there is an image subfolder under your extension project workspace:
+## 🎯 Usage
+1. Open a Python file in VS Code.
+2. Press `Cmd + Shift + P` (Mac) or `Ctrl + Shift + P` (Windows/Linux).
+3. Type `Generate Docstrings` and select the option.
+4. Watch as Quantum Doc intelligently adds well-structured docstrings to your functions and classes!
 
-\!\[feature X\]\(images/feature-x.png\)
+## 🌟 Example
+### Before:
+```python
+from flask import Flask, jsonify, request
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+app = Flask(__name__)
+items = []
 
-## Requirements
+@app.route("/items", methods=["POST"])
+def create_item():
+    data = request.get_json()
+    items.append(data)
+    return jsonify(data), 201
+```
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### After:
+```python
+from flask import Flask, jsonify, request
 
-## Extension Settings
+app = Flask(__name__)
+items = []
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+@app.route("/items", methods=["POST"])
+def create_item():
+    """Creates a new item.
 
-For example:
+    Returns:
+        tuple: JSON representation of the created item and HTTP status 201.
+    """
+    data = request.get_json()
+    items.append(data)
+    return jsonify(data), 201
+```
 
-This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## 🎥 Example Video
+_A demo video showcasing Quantum Doc in action_
 
-## Known Issues
+[Placeholder for .mov video file]
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## 🔑 Setting Up Your Gemini API Key
+Since Quantum Doc relies on the **Gemini 1.5 Flash** model, users need to provide their own API key to enable AI-powered docstring generation.
 
-## Release Notes
+### Steps to Get Your Gemini API Key:
+1. Go to the [Google AI Developer Console](https://ai.google.com/) and sign in.
+2. Navigate to the **API Keys** section.
+3. Generate a new API key.
+4. Copy the API key and add it to the extension settings in VS Code:
+   - Open VS Code settings (`Cmd + Shift + P` and type `Open User Settings`).
+   - Search for `Quantum Doc API Key`.
+   - Paste your API key in the field.
 
-Users appreciate release notes as you update your extension.
+## 📌 Notes
+- Ensure that your API key has sufficient quota for AI requests.
+- The extension only supports Python at the moment.
+- Your API key is stored locally and never shared.
 
-### 1.0.0
+## 🤝 Contributing
+We welcome contributions! If you find a bug or want to improve the extension, feel free to submit a pull request or open an issue on GitHub.
 
-Initial release of ...
+## 📜 License
+Quantum Doc is proprietary software. The license restricts copying, sharing, and unauthorized use outside of the extension.
 
-### 1.0.1
+## 📩 Support
+For support or feedback, reach out via [GitHub Issues](https://github.com/your-repo/quantum-doc/issues).
 
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Happy Coding! 🚀
