@@ -55,7 +55,7 @@ def create_item():
 
 
 ## 🎥 Example Video
-![]https://github.com/johnnybasgallop/CodeGenAIAgent/blob/extension/docstring-python/QuantumDoc.gif
+![](https://github.com/johnnybasgallop/CodeGenAIAgent/blob/extension/docstring-python/QuantumDoc.gif)
 
 ## 🔑 Setting Up Your Gemini API Key
 Since Quantum Doc relies on the **Gemini 1.5 Flash** model, users need to provide their own API key to enable AI-powered docstring generation.
