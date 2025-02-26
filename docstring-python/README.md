@@ -55,7 +55,7 @@ def create_item():
 
 
 ## 🎥 Example Video
-_A demo video showcasing Quantum Doc in action_
+![any alternative text you want ](/QuantumDoc.gif)
 
 [Placeholder for .mov video file]
 
