@@ -55,7 +55,7 @@ def create_item():
 
 
 ## 🎥 Example Video
-![any alternative text you want ](/QuantumDoc.gif)
+![any alternative text you want ](QuantumDoc.gif)
 
 [Placeholder for .mov video file]
 
