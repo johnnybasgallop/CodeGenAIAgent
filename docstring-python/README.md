@@ -55,7 +55,8 @@ def create_item():
 
 
 ## 🎥 Example Video
-![](QuantumDoc.gif)
+<video src="QuantumDoc.mp4">
+</video>
 
 
 ## 🔑 Setting Up Your Gemini API Key
