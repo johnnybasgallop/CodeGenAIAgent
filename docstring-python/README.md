@@ -55,8 +55,7 @@ def create_item():
 
 
 ## 🎥 Example Video
-<video src="QuantumDoc.mp4">
-</video>
+![Auto Generate Docstrings](images/demo.gif)
 
 
 ## 🔑 Setting Up Your Gemini API Key

@@ -10,8 +10,23 @@
 		"vscode": "^1.84.0"
 	},
 	"categories": [
-		"Other"
+		"Snippets",
+        "Formatters",
+        "Programming Languages"
 	],
+	"keywords": [
+		"python",
+		"docstring",
+		"generator",
+		"autodocstring",
+		"documentation",
+		"pydocstring",
+		"docblockr",
+		"doxygen",
+		"google",
+		"numpy",
+		"sphinx"
+    ],
 	"activationEvents": [
 		"onCommand:docstring-python.generateDocstrings"
 	],
