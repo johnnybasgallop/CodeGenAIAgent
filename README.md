@@ -2,6 +2,9 @@
 
 Quantum Doc is a powerful Visual Studio Code extension that leverages AI to generate production-quality docstrings in the Google style directly within your Python files. Say goodbye to manually writing docstrings and let Quantum Doc handle the documentation for you!
 
+## 🎥 Example Video
+![Auto Generate Docstrings](https://raw.githubusercontent.com/johnnybasgallop/CodeGenAIAgent/refs/heads/extension/docstring-python/images/demo.gif)
+
 ## 🚀 Features
 - **AI-Powered DocStrings**: Generates high-quality Google-style docstrings for your Python functions, classes, and modules.
 - **Seamless Integration**: Works directly within VS Code without disrupting your workflow.
@@ -23,7 +26,7 @@ Quantum Doc is a powerful Visual Studio Code extension that leverages AI to gene
 ### Before:
 ```python
 from flask import Flask, jsonify, request
-
+https://github.com/johnnybasgallop/CodeGenAIAgent/blob/extension/docstring-python/images/demo2.gif?raw=true
 app = Flask(__name__)
 items = []
 
@@ -54,8 +57,7 @@ def create_item():
 ```
 
 
-## 🎥 Example Video
-![Auto Generate Docstrings](docstring-python/images/demo.gif)
+
 
 ## 🔑 Setting Up Your Gemini API Key
 Since Quantum Doc relies on the **Gemini 1.5 Flash** model, users need to provide their own API key to enable AI-powered docstring generation.

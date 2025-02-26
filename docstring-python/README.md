@@ -2,6 +2,9 @@
 
 Quantum Doc is a powerful Visual Studio Code extension that leverages AI to generate production-quality docstrings in the Google style directly within your Python files. Say goodbye to manually writing docstrings and let Quantum Doc handle the documentation for you!
 
+## 🎥 Example Video
+![Auto Generate Docstrings](https://raw.githubusercontent.com/johnnybasgallop/CodeGenAIAgent/refs/heads/extension/docstring-python/images/demo.gif)
+
 ## 🚀 Features
 - **AI-Powered DocStrings**: Generates high-quality Google-style docstrings for your Python functions, classes, and modules.
 - **Seamless Integration**: Works directly within VS Code without disrupting your workflow.
@@ -18,9 +21,6 @@ Quantum Doc is a powerful Visual Studio Code extension that leverages AI to gene
 2. Press `Cmd + Shift + P` (Mac) or `Ctrl + Shift + P` (Windows/Linux).
 3. Type `Generate Docstrings` and select the option.
 4. Watch as Quantum Doc intelligently adds well-structured docstrings to your functions and classes!
-
-## 🎥 Example Video
-![Auto Generate Docstrings](https://raw.githubusercontent.com/johnnybasgallop/CodeGenAIAgent/refs/heads/extension/docstring-python/images/demo.gif)
 
 ## 🌟 Example
 ### Before:
