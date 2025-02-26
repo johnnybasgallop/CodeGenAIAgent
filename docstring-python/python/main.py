@@ -63,6 +63,7 @@ while retries < 3:
             str(result)
             .replace("assistant:", "")
             .replace("```json", "")
+            .replace("```python", "")
             .replace("```", "")
         )
         # result is ALREADY the parsed JSON object, thanks to the PydanticOutputParser

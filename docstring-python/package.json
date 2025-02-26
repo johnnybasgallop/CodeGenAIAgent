@@ -2,7 +2,7 @@
 	"name": "docstring-python",
 	"displayName": "QuantumDoc",
 	"description": "Generates docstrings for Python code using an AI agent.",
-	"version": "1.1.8",
+	"version": "1.2.0",
 	"publisher": "BluefinAutomation",
 	"icon": "QuantumDoc.png",
 	"repository": "https://github.com/johnnybasgallop/CodeGenAIAgent/tree/extension",
