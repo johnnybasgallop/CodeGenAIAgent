@@ -19,6 +19,9 @@ Quantum Doc is a powerful Visual Studio Code extension that leverages AI to gene
 3. Type `Generate Docstrings` and select the option.
 4. Watch as Quantum Doc intelligently adds well-structured docstrings to your functions and classes!
 
+## 🎥 Example Video
+![Auto Generate Docstrings](https://raw.githubusercontent.com/johnnybasgallop/CodeGenAIAgent/refs/heads/extension/docstring-python/images/demo.gif)
+
 ## 🌟 Example
 ### Before:
 ```python
@@ -54,8 +57,6 @@ def create_item():
 ```
 
 
-## 🎥 Example Video
-![Auto Generate Docstrings](https://raw.githubusercontent.com/johnnybasgallop/CodeGenAIAgent/refs/heads/extension/docstring-python/images/demo.gif)
 
 
 ## 🔑 Setting Up Your Gemini API Key
